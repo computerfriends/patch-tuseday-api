@@ -208,7 +208,7 @@
         d.setDate(d.getDate() + 7);
     }
 
-    patchTuseday = tuesdays[2]
+    patchTuseday = tuesdays[1]
     return patchTuseday
   }
 
@@ -243,8 +243,8 @@
 
     const pDate = getPatchTuseday();
 
-    console.log(date)
-    console.log(pDate)
+    console.log(date.getWeek)
+    console.log(pDate.getWeek)
 
     if (date.getWeek() === pDate.getWeek()) {
       return true
