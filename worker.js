@@ -230,12 +230,14 @@
     const firstDay = new Date(date.getFullYear(), 0, 1)
     const days = Math.floor((date - firstDay) / (24 * 60 * 60 * 1000))
     weekOfMonth = Math.ceil((days + firstDay.getDay() + 1) / 7)
+    console.log("date is"  + date)
 
 
     const pDate = getPatchTuseday();
     const pFirstDay = new Date(pDate.getFullYear(), 0, 1)
     const pDays = Math.floor((pDate - pFirstDay) / (24 * 60 * 60 * 1000))
     pWeekOfMonth = Math.ceil((pDays + pFirstDay.getDay() + 1) / 7)
+    console.log("pDate is"  + pDate)
 
 
     if (weekOfMonth === pWeekOfMonth) {
