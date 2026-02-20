@@ -247,13 +247,12 @@
 
   function apiFetch() {
 
-    var response = {
-      isPatchTuseday: null,
-      isBWeek: null
-    }
+    var response = {}
 
     response.isPatchTuseday = isPatchTuseday()
     response.isBWeek = isBWeek()
+
+    return response
 
   }
 
