@@ -243,11 +243,6 @@
 
     const pDate = getPatchTuseday();
 
-    temp1 = date.getWeek
-    temp2 = pDate.getWeek
-    console.log(temp1)
-    console.log(temp2)
-
     if (date.getWeek() === pDate.getWeek()) {
       return true
     } else {
