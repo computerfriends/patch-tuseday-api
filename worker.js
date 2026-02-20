@@ -228,7 +228,7 @@
     weekOfMonth = Math.ceil((days + firstDay.getDay() + 1) / 7)
 
 
-    const pDate = getPatchTuseday();
+    const pDate = isPatchTuseday();
     const pFirstDay = new Date(pDate.getFullYear(), 0, 1)
     const pDays = Math.floor((pDate - pFirstDay) / (24 * 60 * 60 * 1000))
     pWeekOfMonth = Math.ceil((pDays + pFirstDay.getDay() + 1) / 7)
