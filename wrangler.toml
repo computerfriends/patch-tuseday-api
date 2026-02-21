@@ -1,12 +1,8 @@
-name = "patch-tuseday-api"
+name = "patch-tuesday-api"
 main = "worker.js"
 compatibility_date = "2026-02-19"
 
 workers_dev = false
-
-[[routes]]
-pattern = "isitpatchtuseday.com"
-custom_domain = true
 
 [observability]
 enabled = false

@@ -189,7 +189,7 @@
   });
 
   // index.js
-  function getPatchTuseday() {
+  function getPatchTuesday() {
 
     var d = new Date(),
         month = d.getMonth(),
@@ -208,15 +208,15 @@
         d.setDate(d.getDate() + 7);
     }
 
-    patchTuseday = tuesdays[1]
-    return patchTuseday
+    patchTuesday = tuesdays[1]
+    return patchTuesday
   }
 
-  function isPatchTuseday() {
+  function isPatchTuesday() {
     const currentDate = new Date()
-    const patchTuseday = getPatchTuseday()
+    const patchTuesday = getPatchTuesday()
 
-    if (patchTuseday.getDay() === currentDate.getDay()) {
+    if (patchTuesday.getDay() === currentDate.getDay()) {
       return true
     } else {
       return false
@@ -241,7 +241,7 @@
 
     const date = new Date()
 
-    const pDate = getPatchTuseday();
+    const pDate = getPatchTuesday();
 
     if (date.getWeek() === pDate.getWeek()) {
       return true
@@ -254,7 +254,7 @@
 
     var response = {}
 
-    response.isPatchTuseday = isPatchTuseday()
+    response.isPatchTuesday = isPatchTuesday()
     response.isBWeek = isBWeek()
 
     return response
@@ -268,7 +268,7 @@
   addEventListener("fetch", (event) => {
     event.respondWith(app.handleRequest(event.request));
   });
-  app.get("/api/v1/patchtuseday", async (req, res) => {
+  app.get("/api/v1/patchtuesday", async (req, res) => {
     return res.send(apiFetch());
   });
 })();
