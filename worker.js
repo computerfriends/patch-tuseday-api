@@ -217,9 +217,9 @@
     const patchTuesday = getPatchTuesday()
 
     if (patchTuesday.getDay() === currentDate.getDay()) {
-      return 1
+      return true
     } else {
-      return 0
+      return false
     }
 
   }
@@ -244,9 +244,9 @@
     const pDate = getPatchTuesday();
 
     if (date.getWeek() === pDate.getWeek()) {
-      return 1
+      return true
     } else {
-      return 0
+      return false
     }
   }
 
