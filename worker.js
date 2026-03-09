@@ -246,6 +246,9 @@
 
     const pDate = getPatchTuesday();
 
+    console.log("current date week", date.getWeek())
+    console.log("pDate date week", Pdate.getWeek())
+
     if (date.getWeek() === pDate.getWeek()) {
       return true
     } else {
