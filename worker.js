@@ -249,7 +249,10 @@
     console.log("current date week", date.getWeek())
     console.log("pDate date week", pDate.getWeek())
 
-    if (date.getWeek() === pDate.getWeek()) {
+    dateWeek = date.getWeek()
+    pDateWeek = date.pDateWeek()
+
+    if (dateWeek === pDateWeek) {
       return true
     } else {
       return false
